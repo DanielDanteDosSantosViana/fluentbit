@@ -1,0 +1,8 @@
+version: '3'
+
+services: 
+ fluentbit:
+     hostname: fluentbit
+     image: fluent/fluent-bit:0.14
+     volumes:
+       - "./volumes/fluent-bit-etc:/fluent-bit/etc"
